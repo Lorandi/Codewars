@@ -1,8 +1,11 @@
-const ordenado = (a) => {
-    console.log(a)
-    console.log(a.sort())
+function removeChar(inicio,fim){
+    str = '1234567890'
+        
+    return str.slice(inicio,fim);
+};
 
-    console.log(a.sort((a, b) => a.length - b.length))
-}
-
-ordenado([ "constituição", "anel", "músculo", "oi", "pedra", "zumb", "casa"])
+console.log(removeChar(0));     //1234567890
+console.log(removeChar(-3,-1)); //89
+console.log(removeChar(2));     //34567890
+console.log(removeChar(1,-1));  //23456789
+console.log(removeChar(0,3));   //123
