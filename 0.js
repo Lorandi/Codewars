@@ -1,16 +1,8 @@
+let a, b, rest;
 
-// const array = [ '1', '3', '2', '5', '3' ]
-// const toNum = array.map(Number)
-// console.log(toNum) //[1,3,2,5,3]
+[a, b, c, ...rest] = [10, 20, 30, 40, 50, "cachorro"];
 
-const array = [1,3,2,5,3]
-const toStr = array.map(String)
-console.log(toStr) //[ '1', '3', '2', '5', '3' ]
-
-
-
-// const exampleArray = ['aa','bbc','ccdd'];
-// console.log(digitize)
-
-// //digitize = exampleArray.map(arr => arr.toString().length) 
-// console.log(digitize) //[1,3,2,5,3]
+console.log(rest);
+console.log(a);
+console.log(b);
+// expected output: Array [30,40,50]
