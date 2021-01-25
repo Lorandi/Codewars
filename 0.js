@@ -1,8 +1,8 @@
-let a, b, rest;
+const toInt = string => string.charCodeAt(0)
 
-[a, b, c, ...rest] = [10, 20, 30, 40, 50, "cachorro"];
+console.log(toInt("Z"))
+console.log(toInt("z"))
 
-console.log(rest);
-console.log(a);
-console.log(b);
-// expected output: Array [30,40,50]
+var int = 122
+
+console.log(String.fromCharCode(int))
