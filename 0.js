@@ -1,5 +1,13 @@
-const str2 = string => string.replace(/o/gi,'0').replace(/i/gi,'1').replace(/s/gi,'2').replace(/a/gi,'4').replace(/e/gi,'3') 
+const compara = (arr1,arr2) =>{
+    for (i = 0; i < arr2.length; i++){
+        if (arr1[i] !== arr2[i]){
+            return console.log(arr1[i],arr2[i],i);
+        }
+    }
+}
 
 
-
-console.log(str2("Harry Potter é uma série de sete romances de fantasia escrita pela autora britânica J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos de idade que é um bruxo ao ser convidado para estudar na Es"))
+compara(
+    ['5', 'g', 't', 'p', 'e', '4', 'm'], 
+    ['5', 'g', 't', 'p', 'g', 'e', '4', 'm', 't'])
+    // [5,q,g,0,t,r,p,g,e,9,4,i,m,t]
