@@ -1,4 +1,1 @@
-var numbers = [4568, 08 ];
-console.log(numbers)
-console.log(String(numbers))
-console.log(Number(''+numbers))
+console.log(typeof 0 === 'number')
