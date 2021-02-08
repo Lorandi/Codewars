@@ -18,10 +18,6 @@
 
 const validatePIN = s => /^(\d{4}|\d{6})$/.test(s)
 
-
-
-
-
 console.log(validatePIN("1234"))//true,
 console.log(validatePIN("1"))//,false,S
 console.log(validatePIN("123"))//,false,
