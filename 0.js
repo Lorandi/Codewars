@@ -1,25 +1,19 @@
-var arr = [20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5];
+function duplicateEncode (string){
+       
+    const newString = string.toUpperCase().split("")
 
-function foo(arr) {
-    var a = [], b = [], prev;
-    
-    arr.sort();
-    for ( var i = 0; i < arr.length; i++ ) {
-        if ( arr[i] !== prev ) {
-            a.push(arr[i]);
-            b.push(1);
-        } else {
-            b[b.length-1]++;
+    for(var i=0; i<string.length; i++){
+        var removed = newString.splice(0,1)
+        console.log(removed)
+        console.log(newString)
+        for(var j=0; j<newString.length; j++){
+            if(removed == newString[j]){
+                
+            }
+
         }
-        prev = arr[i];
-    }
-    for(j = 0; j < b.length; j++){
-        if(b[j] % 2 != 0){
-            return a[j]            
-        }
-    }
+
+    } return string
 }
 
-var result = foo(arr);
-
-
+console.log(duplicateEncode("Success"))//)())())
