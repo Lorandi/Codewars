@@ -1,19 +1,5 @@
-function duplicateEncode (string){
-       
-    const newString = string.toUpperCase().split("")
 
-    for(var i=0; i<string.length; i++){
-        var removed = newString.splice(0,1)
-        console.log(removed)
-        console.log(newString)
-        for(var j=0; j<newString.length; j++){
-            if(removed == newString[j]){
-                
-            }
-
-        }
-
-    } return string
-}
-
-console.log(duplicateEncode("Success"))//)())())
+var newString = [1,2, 3, 4, 5]
+var removed = newString.splice(3, 1,"batata")
+console.log(removed)
+console.log(newString)
