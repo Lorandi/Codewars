@@ -1,14 +1,20 @@
 //Array.diff
 
-function arrayDiff(a, b) {
+function arrayDiff(a, b) {    
+
     for (var i = 0; i < a.length; i++) {
         for (var j = 0; j < b.length; j++) {
             if(a[i] === b[j]){
-                a.splice(i,1)
+               a.splice(i,1)
+               i--;
             }
         }
     }return a;  
 }
+
+// function array_diff(a, b) {
+//     return a.filter(x=>b.indexOf(x));
+//   }
 
 console.log(arrayDiff([], [4,5]))//[], "a was [], b was [4,5]");
 console.log(arrayDiff([3,4], [3]))//[4], "a was [3,4], b was [3]");
