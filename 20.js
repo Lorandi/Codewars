@@ -1,30 +1,23 @@
 //Dubstep
-//ta errado ainda
 
 function songDecoder(song){
     
-    newSong = song.replace(/WUB/g,"%")
+    newSong = song.replace(/WUB/g," ")
     finalSong = "";
     answer = "";
 
     for(var i = 0; i < newSong.length; i++){
-        if(newSong[i] == "%"){
+        if(newSong[i] == " "){
             continue;
-        }else if((newSong[i] != "%" && newSong[i - 1] == "%")){
-            finalSong += "%"  
+        }else if((newSong[i] != " " && newSong[i - 1] == " ")){
+            finalSong += " "  
             finalSong +=newSong[i]
         }else{
             finalSong +=newSong[i]
         }
     }
-    //for(var i = 0; i < finalSong.length; i++){
-
-
-
-    console.log (`song: ${song}`)
-    console.log (`newSong: ${newSong}`)
-    console.log (`finalSong: ${finalSong}`)
-    return 0;
+  
+    return finalSong.trim();
   }
 
   console.log(songDecoder("AWUBBWUBC"))//"A B C","WUB should be replaced by 1 space");
